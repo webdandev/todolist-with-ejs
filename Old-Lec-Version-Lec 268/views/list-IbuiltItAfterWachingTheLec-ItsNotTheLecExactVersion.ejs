@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>	
+</head>
+
+<body>
+
+	<ul>
+		<% for (i=0; i<listItems.length; i++) { %>
+			<li> <%= listItems[i] %> </li>
+		<% } %>		
+	</ul>
+
+	<form action="/" method="post">
+		<input type="text" name="newItem" autofocus>
+		<button type="submit">Add</button>
+	</form>
+
+	<!-- <% if (KindOfDay === "Thursday") { %>
+		<h1 style="color: purple"><%= KindOfDay %>ToDo List</h1>
+	<% } else { %>
+		<h1 style="color: blue"><%= KindOfDay %>ToDo List</h1>
+	<% } %>	 -->
+	
+</body>
+</html>
